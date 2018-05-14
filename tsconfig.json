@@ -5,7 +5,7 @@
     "sourceMap": false,
     "declaration": false,
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": false,
     "experimentalDecorators": true,
     "target": "es5",
     "typeRoots": [
