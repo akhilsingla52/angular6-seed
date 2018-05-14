@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "Angular6": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/Angular6",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.json",
+            "assets": [
+              "src/assets/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/assets/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "Angular6:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "Angular6"
+}
